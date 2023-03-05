@@ -19,7 +19,17 @@ h1{
     font-size: 5vmax;
    
 
-  }
+}
+h3{
+    color: white;
+    font-size: 1vmax;
+    align-self: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+}
 input{
     display: block;
     width: 20vw;
@@ -57,6 +67,10 @@ input[type="submit"]{
     height: 100vh;
     max-width: 500px;
     padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 
 }
 .logo-container{
@@ -71,7 +85,7 @@ input[type="submit"]{
 }
 .odin-logo{
     width: 25%;
-    height: 25%;
+    height: 80%;
 }
 
 .main{
