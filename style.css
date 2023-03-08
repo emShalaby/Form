@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --borderColor:blue;
+}
 body{
     display: flex;
     width: 100%;
@@ -27,15 +30,20 @@ h3{
 }
 a{
     text-decoration: none;
+    color: black;
+}
+.credit{
     color: white;
     text-decoration: underline;
+    
 }
 input{
     display: block;
-    width: 20vw;
+    width: 19vw;
     height: 3.5vh;
     border:none;
-    border: solid rgba(0,0,0,.1);
+    border: solid 1px rgba(0,0,0,.1);
+    padding: 1vh .5vw;
     
 }
 form{
@@ -124,7 +132,7 @@ margin-top: 20px;
 }
 input:focus{
     outline: none;
-    border: solid blue 2px;
+    border: solid var(--borderColor) 2px;
     box-shadow:  1px 1px rgba(0, 0, 0, .5);
    
 }
@@ -132,4 +140,7 @@ input:invalid{
     outline: none;
     border: solid red 2px;
     
+}
+input[type='password']{
+
 }
