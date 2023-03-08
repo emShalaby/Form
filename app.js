@@ -1,12 +1,18 @@
 const form=document.querySelector('form');
-const passwordField=document.querySelector('#pass')
+const password=document.querySelector('#pass')
+const confirmPass=document.querySelector("#confirmPass")
 
 function checkPassword(){
-    const password=form.password.value
-    const confirmPass=form.confirmPass.value
 
-    if (password!=confirmPass) {
-    passwordField.style.setProperty("--borderColor","red");
-    }; 
+
+    if (password.value!=confirmPass.value) {
+    password.style.setProperty("--borderColor","red");
+    confirmPass.style.setProperty('--borderColor','red');
+    }
+    else{
+        password.style.setProperty("--borderColor",'blue');
+        confirmPass.style.setProperty('--borderColor','blue')
+    }
 }
-passwordField.addEventListener('input',checkPassword);
+password.addEventListener('input',checkPassword);
+confirmPass.addEventListener('input',checkPassword);
