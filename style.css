@@ -47,6 +47,7 @@ input{
     border: solid 1px rgba(0,0,0,.1);
     padding: 1vh .5vw;
     min-height: 15px;
+    font-size: 1.3vmax;
     
 }
 form{
@@ -118,8 +119,8 @@ input[type="submit"]{
 }
 .form-container{
     width: 100%;
-    height: 38vh;
-    min-height: 170px;
+    height: 35vh;
+    min-height: 150px;
     background-color: white;
     box-shadow: 3px 6px rgba(0, 0, 0, .1);
     display: flex;
@@ -136,6 +137,7 @@ margin-top: 20px;
 }
 .footer{
     padding-left: 2vw;
+    font-size: 1vmax;
 }
 input:focus{
     outline: none;
@@ -148,6 +150,9 @@ input:invalid{
     border: solid red 2px;
     
 }
-input[type='password']{
 
+.passError{
+    display: none;
+    color: red;
+    font-size: 1vmax;
 }
