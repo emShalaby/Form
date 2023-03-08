@@ -13,6 +13,7 @@ function checkPassword(){
     passError.style.display='block';
     
     }
+
     else{
         password.style.setProperty("--borderColor",'blue');
         confirmPass.style.setProperty('--borderColor','blue')
