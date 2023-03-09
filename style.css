@@ -157,3 +157,51 @@ input:invalid{
     color: red;
     font-size: 1vmax;
 }
+#loginBtn{
+    all:unset;
+    cursor: pointer;
+}
+.modal{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .5);
+
+}
+#loginMenu{
+
+    background-color: wheat;
+    padding: 0 3vw;
+    padding-bottom: 3vh;
+}
+#loginMenu h2{
+    text-align: center;
+    font-size: 4vmax;
+    margin-bottom: 5vh;
+}
+
+#loginForm{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+#loginForm>input{
+    margin-bottom: 2vh;
+}
+.closeBtnContainer{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2vmax;
+    cursor: pointer;
+    
+}
+

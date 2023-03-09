@@ -52,8 +52,24 @@
             </div>
             <input type="submit" value="Create Account">
         </form>
-        <p class="footer">Already have an account? <a href="loginpage">Log in</a></p>
+        <p class="footer">Already have an account? <button id="loginBtn">Log in</button> </p>
 
+    </div>
+    <div id="loginModal" class="modal">
+        <div id="loginMenu">
+            <div class="closeBtnContainer"><p class="closeBtn">&times;</p></div>
+            <h2>Sign in</h2>
+
+
+            
+            <form id="loginForm">
+                <label for="loginName" >Email</label>
+                <input type="email" name="account_name" id="loginName">
+                <label for="loginPass">Password</label>
+                <input type="password" name="account_password" id="loginPass">
+                <input type="submit" value="Log in">
+            </form>
+        </div>
     </div>
 </body>
 </html>
